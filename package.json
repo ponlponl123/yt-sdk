@@ -1,0 +1,38 @@
+{
+  "name": "yt-sdk",
+  "version": "1.0.0",
+  "description": "Youtube, Youtube Music SDK",
+  "keywords": [
+    "youtube",
+    "youtube",
+    "music",
+    "sdk",
+    "utility"
+  ],
+  "homepage": "https://github.com/ponlponl123/yt-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/ponlponl123/yt-sdk/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponlponl123/yt-sdk.git"
+  },
+  "license": "MIT",
+  "author": "Ponlponl123",
+  "type": "module",
+  "main": "src/index.ts",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --module system src/index.ts --outFile build/bundle.js",
+    "build:yt": "tsc --module system src/youtube.ts --outFile build/yt-sdk.js",
+    "build:ytm": "tsc --module system src/youtube-music.ts --outFile build/ytm-sdk.js",
+    "build:utils": "tsc --module system src/utils/index.ts --outFile build/utils.js",
+    "build:all": "npm run build && npm run build:yt && npm run build:ytm && npm run build:utils"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
