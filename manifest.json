@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "YT-SDK",
+    "version": "1.0.0",
+    "action": {
+
+    },
+    "background": {
+        "service_worker": "background/bundle.js",
+        "type": "module"
+    },
+    "permissions": ["scripting", "activeTab"]
+}

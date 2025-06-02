@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "amd",
-    "moduleResolution": "node",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "types": [],
+    "types": ["chrome"],
     "outDir": "./build",
     "rootDir": "./src",
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "baseUrl": "./src"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

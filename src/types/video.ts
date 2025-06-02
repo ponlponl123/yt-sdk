@@ -1,4 +1,4 @@
-import { Placeholder as ChannelPlaceholder } from "./channel";
+import { Placeholder as ChannelPlaceholder } from "./channel.js";
 
 export type Thumbnail = {
     url: string;

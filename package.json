@@ -30,9 +30,13 @@
     "build:yt": "tsc --module system src/youtube.ts --outFile build/yt-sdk.js",
     "build:ytm": "tsc --module system src/youtube-music.ts --outFile build/ytm-sdk.js",
     "build:utils": "tsc --module system src/utils/index.ts --outFile build/utils.js",
-    "build:all": "npm run build && npm run build:yt && npm run build:ytm && npm run build:utils"
+    "build:injector": "bun builder && bash cp-injector.sh",
+    "build:all": "npm run build && npm run build:yt && npm run build:ytm && npm run build:utils && npm run build:injector"
   },
   "devDependencies": {
+    "@types/bun": "^1.2.15",
+    "@types/chrome": "^0.0.326",
+    "@types/node": "^22.15.29",
     "typescript": "^5.8.3"
   }
 }
